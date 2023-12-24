@@ -13,7 +13,7 @@ This repository contains automated tests written in Robot Framework.
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/your-username/your-repository.git
+   git clone https://github.com/PeaVivit/AutomateRobot.git
    ```
 
 2. Install Robot Framework and necessary libraries:
