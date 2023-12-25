@@ -26,6 +26,14 @@ This repository contains automated tests written in Robot Framework.
 
 3. Download the WebDriver executable (e.g., chromedriver/geckodriver) and add it to your system's PATH.
 
+## Access file to run Script
+
+type this path in terminal to access file path
+
+```bash
+env\Scripts\activate
+```
+
 ## Running Tests
 
 To run the tests, execute the following command:

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.11.4 on win32)" generated="20231224 23:00:11.141" rpa="false" schemaversion="4">
+<robot generator="Robot 6.1.1 (Python 3.11.4 on win32)" generated="20231225 11:24:57.201" rpa="false" schemaversion="4">
 <suite id="s1" name="Test Search bar" source="C:\workV\TestAuto\Test_Search_bar.robot">
 <test id="s1-t1" name="Test Brands Search" line="11">
 <kw name="Open Browser To Central Website">
@@ -7,255 +7,392 @@
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20231224 23:00:11.437" level="INFO">Opening browser 'Chrome' to base url 'https://www.central.co.th/en'.</msg>
-<status status="PASS" starttime="20231224 23:00:11.436" endtime="20231224 23:00:17.411"/>
+<msg timestamp="20231225 11:24:57.610" level="INFO">Opening browser 'Chrome' to base url 'https://www.central.co.th/en'.</msg>
+<status status="PASS" starttime="20231225 11:24:57.610" endtime="20231225 11:25:13.054"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20231224 23:00:17.411" endtime="20231224 23:00:18.296"/>
+<status status="PASS" starttime="20231225 11:25:13.054" endtime="20231225 11:25:14.478"/>
 </kw>
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <arg>0.5s</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20231224 23:00:18.296" endtime="20231224 23:00:18.296"/>
+<status status="PASS" starttime="20231225 11:25:14.478" endtime="20231225 11:25:14.479"/>
 </kw>
-<status status="PASS" starttime="20231224 23:00:11.436" endtime="20231224 23:00:18.296"/>
+<status status="PASS" starttime="20231225 11:24:57.610" endtime="20231225 11:25:14.479"/>
 </kw>
 <kw name="Search with Brands">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>//*[@id="autocomplete-0-input"]</arg>
 <arg>Nike</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231224 23:00:18.298" level="INFO">Typing text 'Nike' into text field '//*[@id="autocomplete-0-input"]'.</msg>
-<status status="PASS" starttime="20231224 23:00:18.297" endtime="20231224 23:00:24.180"/>
+<msg timestamp="20231225 11:25:14.482" level="INFO">Typing text 'Nike' into text field '//*[@id="autocomplete-0-input"]'.</msg>
+<status status="PASS" starttime="20231225 11:25:14.481" endtime="20231225 11:25:18.206"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>//*[@id="autocomplete-0-input"]</arg>
 <arg>\ue007</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20231224 23:00:24.183" level="INFO">Sending key(s) ('\ue007',) to //*[@id="autocomplete-0-input"] element.</msg>
-<msg timestamp="20231224 23:00:26.803" level="INFO">Sending key </msg>
-<status status="PASS" starttime="20231224 23:00:24.180" endtime="20231224 23:00:27.592"/>
+<msg timestamp="20231225 11:25:18.208" level="INFO">Sending key(s) ('\ue007',) to //*[@id="autocomplete-0-input"] element.</msg>
+<msg timestamp="20231225 11:25:26.790" level="INFO">Sending key </msg>
+<status status="PASS" starttime="20231225 11:25:18.207" endtime="20231225 11:25:27.646"/>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20231224 23:00:28.307" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20231224 23:00:27.592" endtime="20231224 23:00:28.307"/>
+<msg timestamp="20231225 11:25:28.320" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-10.png"&gt;&lt;img src="selenium-screenshot-10.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20231225 11:25:27.646" endtime="20231225 11:25:28.320"/>
 </kw>
-<status status="PASS" starttime="20231224 23:00:18.297" endtime="20231224 23:00:28.307"/>
+<status status="PASS" starttime="20231225 11:25:14.480" endtime="20231225 11:25:28.320"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20231224 23:00:28.308" endtime="20231224 23:00:31.155"/>
+<status status="PASS" starttime="20231225 11:25:28.321" endtime="20231225 11:25:30.897"/>
 </kw>
-<status status="PASS" starttime="20231224 23:00:11.435" endtime="20231224 23:00:31.156"/>
+<status status="PASS" starttime="20231225 11:24:57.609" endtime="20231225 11:25:30.899"/>
 </test>
-<test id="s1-t2" name="Test Products Search" line="16">
+<test id="s1-t2" name="Test Search with Thai Language" line="16">
 <kw name="Open Browser To Central Website">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20231224 23:00:31.160" level="INFO">Opening browser 'Chrome' to base url 'https://www.central.co.th/en'.</msg>
-<status status="PASS" starttime="20231224 23:00:31.159" endtime="20231224 23:00:40.329"/>
+<msg timestamp="20231225 11:25:30.904" level="INFO">Opening browser 'Chrome' to base url 'https://www.central.co.th/en'.</msg>
+<status status="PASS" starttime="20231225 11:25:30.902" endtime="20231225 11:25:43.459"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20231224 23:00:40.329" endtime="20231224 23:00:41.071"/>
+<status status="PASS" starttime="20231225 11:25:43.459" endtime="20231225 11:25:44.257"/>
 </kw>
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <arg>0.5s</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20231224 23:00:41.072" endtime="20231224 23:00:41.072"/>
+<status status="PASS" starttime="20231225 11:25:44.257" endtime="20231225 11:25:44.257"/>
 </kw>
-<status status="PASS" starttime="20231224 23:00:31.159" endtime="20231224 23:00:41.072"/>
+<status status="PASS" starttime="20231225 11:25:30.902" endtime="20231225 11:25:44.257"/>
+</kw>
+<kw name="Multi Language Search">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="autocomplete-0-input"]</arg>
+<arg>รองเท้า</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231225 11:25:44.258" level="INFO">Typing text 'รองเท้า' into text field '//*[@id="autocomplete-0-input"]'.</msg>
+<status status="PASS" starttime="20231225 11:25:44.258" endtime="20231225 11:25:47.503"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>//*[@id="autocomplete-0-input"]</arg>
+<arg>\ue007</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20231225 11:25:47.505" level="INFO">Sending key(s) ('\ue007',) to //*[@id="autocomplete-0-input"] element.</msg>
+<msg timestamp="20231225 11:25:57.064" level="INFO">Sending key </msg>
+<status status="PASS" starttime="20231225 11:25:47.504" endtime="20231225 11:25:57.870"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20231225 11:25:58.577" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-11.png"&gt;&lt;img src="selenium-screenshot-11.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20231225 11:25:57.870" endtime="20231225 11:25:58.577"/>
+</kw>
+<status status="PASS" starttime="20231225 11:25:44.257" endtime="20231225 11:25:58.578"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20231225 11:25:58.578" endtime="20231225 11:26:01.178"/>
+</kw>
+<status status="PASS" starttime="20231225 11:25:30.901" endtime="20231225 11:26:01.179"/>
+</test>
+<test id="s1-t3" name="Test Products Search" line="21">
+<kw name="Open Browser To Central Website">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231225 11:26:01.183" level="INFO">Opening browser 'Chrome' to base url 'https://www.central.co.th/en'.</msg>
+<status status="PASS" starttime="20231225 11:26:01.183" endtime="20231225 11:26:08.970"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20231225 11:26:08.970" endtime="20231225 11:26:09.606"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.5s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20231225 11:26:09.606" endtime="20231225 11:26:09.607"/>
+</kw>
+<status status="PASS" starttime="20231225 11:26:01.183" endtime="20231225 11:26:09.607"/>
 </kw>
 <kw name="Search with Products">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>//*[@id="autocomplete-0-input"]</arg>
 <arg>Shoe</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231224 23:00:41.076" level="INFO">Typing text 'Shoe' into text field '//*[@id="autocomplete-0-input"]'.</msg>
-<status status="PASS" starttime="20231224 23:00:41.074" endtime="20231224 23:00:43.773"/>
+<msg timestamp="20231225 11:26:09.609" level="INFO">Typing text 'Shoe' into text field '//*[@id="autocomplete-0-input"]'.</msg>
+<status status="PASS" starttime="20231225 11:26:09.607" endtime="20231225 11:26:11.816"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>//*[@id="autocomplete-0-input"]</arg>
 <arg>\ue007</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20231224 23:00:43.775" level="INFO">Sending key(s) ('\ue007',) to //*[@id="autocomplete-0-input"] element.</msg>
-<msg timestamp="20231224 23:00:45.510" level="INFO">Sending key </msg>
-<status status="PASS" starttime="20231224 23:00:43.773" endtime="20231224 23:00:46.135"/>
+<msg timestamp="20231225 11:26:11.817" level="INFO">Sending key(s) ('\ue007',) to //*[@id="autocomplete-0-input"] element.</msg>
+<msg timestamp="20231225 11:26:13.640" level="INFO">Sending key </msg>
+<status status="PASS" starttime="20231225 11:26:11.816" endtime="20231225 11:26:14.270"/>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20231224 23:00:48.359" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20231224 23:00:46.135" endtime="20231224 23:00:48.359"/>
+<msg timestamp="20231225 11:26:16.356" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-12.png"&gt;&lt;img src="selenium-screenshot-12.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20231225 11:26:14.270" endtime="20231225 11:26:16.357"/>
 </kw>
-<status status="PASS" starttime="20231224 23:00:41.073" endtime="20231224 23:00:48.360"/>
+<status status="PASS" starttime="20231225 11:26:09.607" endtime="20231225 11:26:16.357"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20231224 23:00:48.361" endtime="20231224 23:00:51.185"/>
+<status status="PASS" starttime="20231225 11:26:16.357" endtime="20231225 11:26:18.958"/>
 </kw>
-<status status="PASS" starttime="20231224 23:00:31.158" endtime="20231224 23:00:51.186"/>
+<status status="PASS" starttime="20231225 11:26:01.181" endtime="20231225 11:26:18.959"/>
 </test>
-<test id="s1-t3" name="Test Spacebar Search" line="21">
+<test id="s1-t4" name="Test Spacebar Search" line="26">
 <kw name="Open Browser To Central Website">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20231224 23:00:51.190" level="INFO">Opening browser 'Chrome' to base url 'https://www.central.co.th/en'.</msg>
-<status status="PASS" starttime="20231224 23:00:51.189" endtime="20231224 23:00:57.397"/>
+<msg timestamp="20231225 11:26:18.963" level="INFO">Opening browser 'Chrome' to base url 'https://www.central.co.th/en'.</msg>
+<status status="PASS" starttime="20231225 11:26:18.963" endtime="20231225 11:26:25.138"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20231224 23:00:57.397" endtime="20231224 23:00:58.870"/>
+<status status="PASS" starttime="20231225 11:26:25.138" endtime="20231225 11:26:26.065"/>
 </kw>
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <arg>0.5s</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20231224 23:00:58.870" endtime="20231224 23:00:58.871"/>
+<status status="PASS" starttime="20231225 11:26:26.065" endtime="20231225 11:26:26.065"/>
 </kw>
-<status status="PASS" starttime="20231224 23:00:51.189" endtime="20231224 23:00:58.871"/>
+<status status="PASS" starttime="20231225 11:26:18.962" endtime="20231225 11:26:26.065"/>
 </kw>
 <kw name="Spacebar Search">
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>//*[@id="autocomplete-0-input"]</arg>
 <arg>SPACE</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20231224 23:00:58.874" level="INFO">Sending key(s) ('SPACE',) to //*[@id="autocomplete-0-input"] element.</msg>
-<msg timestamp="20231224 23:01:03.098" level="INFO">Pressing special key SPACE to element.</msg>
-<msg timestamp="20231224 23:01:03.098" level="INFO">Releasing special key SPACE.</msg>
-<status status="PASS" starttime="20231224 23:00:58.873" endtime="20231224 23:01:03.814"/>
+<msg timestamp="20231225 11:26:26.066" level="INFO">Sending key(s) ('SPACE',) to //*[@id="autocomplete-0-input"] element.</msg>
+<msg timestamp="20231225 11:26:27.765" level="INFO">Pressing special key SPACE to element.</msg>
+<msg timestamp="20231225 11:26:27.765" level="INFO">Releasing special key SPACE.</msg>
+<status status="PASS" starttime="20231225 11:26:26.066" endtime="20231225 11:26:28.463"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20231224 23:01:06.814" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20231224 23:01:03.814" endtime="20231224 23:01:06.814"/>
+<msg timestamp="20231225 11:26:31.464" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20231225 11:26:28.464" endtime="20231225 11:26:31.464"/>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <var>${text}</var>
 <arg>xpath=//*[@id="searchSuggestions"]/div/div[1]/section[1]/div/div</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20231224 23:01:07.855" level="INFO">${text} = TRENDING</msg>
-<status status="PASS" starttime="20231224 23:01:06.815" endtime="20231224 23:01:07.855"/>
+<msg timestamp="20231225 11:26:32.511" level="INFO">${text} = TRENDING</msg>
+<status status="PASS" starttime="20231225 11:26:31.465" endtime="20231225 11:26:32.511"/>
 </kw>
 <kw name="Log" library="BuiltIn">
 <arg>${text}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20231224 23:01:07.855" level="INFO">TRENDING</msg>
-<status status="PASS" starttime="20231224 23:01:07.855" endtime="20231224 23:01:07.855"/>
+<msg timestamp="20231225 11:26:32.511" level="INFO">TRENDING</msg>
+<status status="PASS" starttime="20231225 11:26:32.511" endtime="20231225 11:26:32.511"/>
 </kw>
 <kw name="Set Variable" library="BuiltIn">
 <var>${expected_result}</var>
 <arg>TRENDING</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20231224 23:01:07.856" level="INFO">${expected_result} = TRENDING</msg>
-<status status="PASS" starttime="20231224 23:01:07.855" endtime="20231224 23:01:07.856"/>
+<msg timestamp="20231225 11:26:32.511" level="INFO">${expected_result} = TRENDING</msg>
+<status status="PASS" starttime="20231225 11:26:32.511" endtime="20231225 11:26:32.511"/>
 </kw>
 <kw name="Set Variable" library="BuiltIn">
 <var>${actual_result}</var>
 <arg>${text}</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20231224 23:01:07.856" level="INFO">${actual_result} = TRENDING</msg>
-<status status="PASS" starttime="20231224 23:01:07.856" endtime="20231224 23:01:07.856"/>
+<msg timestamp="20231225 11:26:32.512" level="INFO">${actual_result} = TRENDING</msg>
+<status status="PASS" starttime="20231225 11:26:32.511" endtime="20231225 11:26:32.512"/>
 </kw>
 <kw name="Should Be Equal As Strings" library="BuiltIn">
 <arg>${actual_result}</arg>
 <arg>${expected_result}</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" starttime="20231224 23:01:07.856" endtime="20231224 23:01:07.857"/>
+<status status="PASS" starttime="20231225 11:26:32.512" endtime="20231225 11:26:32.512"/>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20231224 23:01:08.492" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20231224 23:01:07.857" endtime="20231224 23:01:08.492"/>
+<msg timestamp="20231225 11:26:33.153" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-13.png"&gt;&lt;img src="selenium-screenshot-13.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20231225 11:26:32.512" endtime="20231225 11:26:33.153"/>
 </kw>
-<status status="PASS" starttime="20231224 23:00:58.872" endtime="20231224 23:01:08.492"/>
+<status status="PASS" starttime="20231225 11:26:26.065" endtime="20231225 11:26:33.154"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20231224 23:01:08.493" endtime="20231224 23:01:11.429"/>
+<status status="PASS" starttime="20231225 11:26:33.154" endtime="20231225 11:26:35.782"/>
 </kw>
-<status status="PASS" starttime="20231224 23:00:51.188" endtime="20231224 23:01:11.432"/>
+<status status="PASS" starttime="20231225 11:26:18.961" endtime="20231225 11:26:35.783"/>
 </test>
-<test id="s1-t4" name="Test Special Characters" line="26">
+<test id="s1-t5" name="Test Number Search" line="31">
 <kw name="Open Browser To Central Website">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20231224 23:01:11.438" level="INFO">Opening browser 'Chrome' to base url 'https://www.central.co.th/en'.</msg>
-<status status="PASS" starttime="20231224 23:01:11.436" endtime="20231224 23:01:17.447"/>
+<msg timestamp="20231225 11:26:35.788" level="INFO">Opening browser 'Chrome' to base url 'https://www.central.co.th/en'.</msg>
+<status status="PASS" starttime="20231225 11:26:35.787" endtime="20231225 11:26:48.487"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20231224 23:01:17.447" endtime="20231224 23:01:18.468"/>
+<status status="PASS" starttime="20231225 11:26:48.487" endtime="20231225 11:26:49.194"/>
 </kw>
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <arg>0.5s</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20231224 23:01:18.468" endtime="20231224 23:01:18.468"/>
+<status status="PASS" starttime="20231225 11:26:49.194" endtime="20231225 11:26:49.194"/>
 </kw>
-<status status="PASS" starttime="20231224 23:01:11.435" endtime="20231224 23:01:18.468"/>
+<status status="PASS" starttime="20231225 11:26:35.786" endtime="20231225 11:26:49.195"/>
+</kw>
+<kw name="Number Search">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="autocomplete-0-input"]</arg>
+<arg>123456</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231225 11:26:49.198" level="INFO">Typing text '123456' into text field '//*[@id="autocomplete-0-input"]'.</msg>
+<status status="PASS" starttime="20231225 11:26:49.196" endtime="20231225 11:26:51.880"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>//*[@id="autocomplete-0-input"]</arg>
+<arg>\ue007</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20231225 11:26:51.885" level="INFO">Sending key(s) ('\ue007',) to //*[@id="autocomplete-0-input"] element.</msg>
+<msg timestamp="20231225 11:26:57.662" level="INFO">Sending key </msg>
+<status status="PASS" starttime="20231225 11:26:51.884" endtime="20231225 11:26:59.096"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231225 11:27:02.096" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20231225 11:26:59.096" endtime="20231225 11:27:02.096"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${text}</var>
+<arg>xpath=//*[@id="product-list"]/div/div/div/div[1]/p</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20231225 11:27:03.152" level="INFO">${text} = Sorry, we couldn't find any results matching</msg>
+<status status="PASS" starttime="20231225 11:27:02.097" endtime="20231225 11:27:03.152"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${text}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231225 11:27:03.153" level="INFO">Sorry, we couldn't find any results matching</msg>
+<status status="PASS" starttime="20231225 11:27:03.152" endtime="20231225 11:27:03.153"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${expected_result}</var>
+<arg>Sorry, we couldn't find any results matching</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20231225 11:27:03.153" level="INFO">${expected_result} = Sorry, we couldn't find any results matching</msg>
+<status status="PASS" starttime="20231225 11:27:03.153" endtime="20231225 11:27:03.154"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${actual_result}</var>
+<arg>${text}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20231225 11:27:03.155" level="INFO">${actual_result} = Sorry, we couldn't find any results matching</msg>
+<status status="PASS" starttime="20231225 11:27:03.154" endtime="20231225 11:27:03.155"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${actual_result}</arg>
+<arg>${expected_result}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20231225 11:27:03.155" endtime="20231225 11:27:03.156"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20231225 11:27:03.803" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-14.png"&gt;&lt;img src="selenium-screenshot-14.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20231225 11:27:03.156" endtime="20231225 11:27:03.803"/>
+</kw>
+<status status="PASS" starttime="20231225 11:26:49.196" endtime="20231225 11:27:03.803"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20231225 11:27:03.804" endtime="20231225 11:27:06.431"/>
+</kw>
+<status status="PASS" starttime="20231225 11:26:35.785" endtime="20231225 11:27:06.431"/>
+</test>
+<test id="s1-t6" name="Test Special Characters" line="36">
+<kw name="Open Browser To Central Website">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231225 11:27:06.433" level="INFO">Opening browser 'Chrome' to base url 'https://www.central.co.th/en'.</msg>
+<status status="PASS" starttime="20231225 11:27:06.432" endtime="20231225 11:27:14.440"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20231225 11:27:14.440" endtime="20231225 11:27:15.089"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.5s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20231225 11:27:15.089" endtime="20231225 11:27:15.090"/>
+</kw>
+<status status="PASS" starttime="20231225 11:27:06.432" endtime="20231225 11:27:15.090"/>
 </kw>
 <kw name="Search with Special Characters">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>//*[@id="autocomplete-0-input"]</arg>
 <arg>@#$%</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231224 23:01:18.470" level="INFO">Typing text '@#$%' into text field '//*[@id="autocomplete-0-input"]'.</msg>
-<status status="PASS" starttime="20231224 23:01:18.470" endtime="20231224 23:01:21.274"/>
+<msg timestamp="20231225 11:27:15.091" level="INFO">Typing text '@#$%' into text field '//*[@id="autocomplete-0-input"]'.</msg>
+<status status="PASS" starttime="20231225 11:27:15.090" endtime="20231225 11:27:17.093"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>//*[@id="autocomplete-0-input"]</arg>
 <arg>\ue007</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20231224 23:01:21.276" level="INFO">Sending key(s) ('\ue007',) to //*[@id="autocomplete-0-input"] element.</msg>
-<msg timestamp="20231224 23:01:22.985" level="INFO">Sending key </msg>
-<status status="PASS" starttime="20231224 23:01:21.274" endtime="20231224 23:01:23.560"/>
+<msg timestamp="20231225 11:27:17.093" level="INFO">Sending key(s) ('\ue007',) to //*[@id="autocomplete-0-input"] element.</msg>
+<msg timestamp="20231225 11:27:18.608" level="INFO">Sending key </msg>
+<status status="PASS" starttime="20231225 11:27:17.093" endtime="20231225 11:27:19.196"/>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20231224 23:01:24.367" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20231224 23:01:23.560" endtime="20231224 23:01:24.367"/>
+<msg timestamp="20231225 11:27:19.965" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-15.png"&gt;&lt;img src="selenium-screenshot-15.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20231225 11:27:19.196" endtime="20231225 11:27:19.965"/>
 </kw>
-<status status="PASS" starttime="20231224 23:01:18.469" endtime="20231224 23:01:24.367"/>
+<status status="PASS" starttime="20231225 11:27:15.090" endtime="20231225 11:27:19.965"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20231224 23:01:24.368" endtime="20231224 23:01:27.176"/>
+<status status="PASS" starttime="20231225 11:27:19.967" endtime="20231225 11:27:22.614"/>
 </kw>
-<status status="PASS" starttime="20231224 23:01:11.434" endtime="20231224 23:01:27.177"/>
+<status status="PASS" starttime="20231225 11:27:06.432" endtime="20231225 11:27:22.615"/>
 </test>
-<test id="s1-t5" name="Check Empty Input" line="31">
+<test id="s1-t7" name="Check Empty Input" line="41">
 <kw name="Open Browser To Central Website">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20231224 23:01:27.182" level="INFO">Opening browser 'Chrome' to base url 'https://www.central.co.th/en'.</msg>
-<status status="PASS" starttime="20231224 23:01:27.181" endtime="20231224 23:01:37.465"/>
+<msg timestamp="20231225 11:27:22.620" level="INFO">Opening browser 'Chrome' to base url 'https://www.central.co.th/en'.</msg>
+<status status="PASS" starttime="20231225 11:27:22.619" endtime="20231225 11:27:29.744"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20231224 23:01:37.465" endtime="20231224 23:01:38.129"/>
+<status status="PASS" starttime="20231225 11:27:29.744" endtime="20231225 11:27:30.447"/>
 </kw>
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <arg>0.5s</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20231224 23:01:38.130" endtime="20231224 23:01:38.130"/>
+<status status="PASS" starttime="20231225 11:27:30.447" endtime="20231225 11:27:30.448"/>
 </kw>
-<status status="PASS" starttime="20231224 23:01:27.180" endtime="20231224 23:01:38.130"/>
+<status status="PASS" starttime="20231225 11:27:22.618" endtime="20231225 11:27:30.448"/>
 </kw>
 <kw name="Set Variable" library="BuiltIn">
 <var>${input}</var>
 <arg>${EMPTY}</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20231224 23:01:38.132" level="INFO">${input} = </msg>
-<status status="PASS" starttime="20231224 23:01:38.131" endtime="20231224 23:01:38.132"/>
+<msg timestamp="20231225 11:27:30.449" level="INFO">${input} = </msg>
+<status status="PASS" starttime="20231225 11:27:30.449" endtime="20231225 11:27:30.449"/>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <arg>'${input}' == '${EMPTY}'</arg>
@@ -268,177 +405,172 @@
 <kw name="Log" library="BuiltIn">
 <arg>Input is empty</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20231224 23:01:38.136" level="INFO">Input is empty</msg>
-<status status="PASS" starttime="20231224 23:01:38.135" endtime="20231224 23:01:38.136"/>
+<msg timestamp="20231225 11:27:30.451" level="INFO">Input is empty</msg>
+<status status="PASS" starttime="20231225 11:27:30.451" endtime="20231225 11:27:30.451"/>
 </kw>
-<status status="PASS" starttime="20231224 23:01:38.133" endtime="20231224 23:01:38.136"/>
+<status status="PASS" starttime="20231225 11:27:30.450" endtime="20231225 11:27:30.452"/>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20231224 23:01:39.213" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20231224 23:01:38.136" endtime="20231224 23:01:39.213"/>
+<msg timestamp="20231225 11:27:31.586" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-16.png"&gt;&lt;img src="selenium-screenshot-16.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20231225 11:27:30.452" endtime="20231225 11:27:31.586"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20231224 23:01:39.214" endtime="20231224 23:01:41.946"/>
+<status status="PASS" starttime="20231225 11:27:31.586" endtime="20231225 11:27:34.310"/>
 </kw>
-<status status="PASS" starttime="20231224 23:01:27.179" endtime="20231224 23:01:41.947"/>
+<status status="PASS" starttime="20231225 11:27:22.616" endtime="20231225 11:27:34.312"/>
 </test>
-<test id="s1-t6" name="Test Fliter Fuction" line="41">
+<test id="s1-t8" name="Test Fliter Fuction" line="50">
 <kw name="Open Browser To Central Website">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20231224 23:01:41.954" level="INFO">Opening browser 'Chrome' to base url 'https://www.central.co.th/en'.</msg>
-<status status="PASS" starttime="20231224 23:01:41.952" endtime="20231224 23:01:48.121"/>
+<msg timestamp="20231225 11:27:34.319" level="INFO">Opening browser 'Chrome' to base url 'https://www.central.co.th/en'.</msg>
+<status status="PASS" starttime="20231225 11:27:34.317" endtime="20231225 11:27:41.227"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20231224 23:01:48.121" endtime="20231224 23:01:49.140"/>
+<status status="PASS" starttime="20231225 11:27:41.228" endtime="20231225 11:27:42.737"/>
 </kw>
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <arg>0.5s</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20231224 23:01:49.140" endtime="20231224 23:01:49.141"/>
+<status status="PASS" starttime="20231225 11:27:42.737" endtime="20231225 11:27:42.737"/>
 </kw>
-<status status="PASS" starttime="20231224 23:01:41.952" endtime="20231224 23:01:49.141"/>
+<status status="PASS" starttime="20231225 11:27:34.316" endtime="20231225 11:27:42.737"/>
 </kw>
 <kw name="Test Filter">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>//*[@id="autocomplete-0-input"]</arg>
 <arg>Nike</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231224 23:01:49.143" level="INFO">Typing text 'Nike' into text field '//*[@id="autocomplete-0-input"]'.</msg>
-<status status="PASS" starttime="20231224 23:01:49.142" endtime="20231224 23:01:57.258"/>
+<msg timestamp="20231225 11:27:42.740" level="INFO">Typing text 'Nike' into text field '//*[@id="autocomplete-0-input"]'.</msg>
+<status status="PASS" starttime="20231225 11:27:42.739" endtime="20231225 11:27:47.256"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>//*[@id="autocomplete-0-input"]</arg>
 <arg>\ue007</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20231224 23:01:57.260" level="INFO">Sending key(s) ('\ue007',) to //*[@id="autocomplete-0-input"] element.</msg>
-<msg timestamp="20231224 23:02:00.785" level="INFO">Sending key </msg>
-<status status="PASS" starttime="20231224 23:01:57.258" endtime="20231224 23:02:01.602"/>
-</kw>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20231224 23:02:02.703" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20231224 23:02:01.602" endtime="20231224 23:02:02.704"/>
+<msg timestamp="20231225 11:27:47.256" level="INFO">Sending key(s) ('\ue007',) to //*[@id="autocomplete-0-input"] element.</msg>
+<msg timestamp="20231225 11:27:48.953" level="INFO">Sending key </msg>
+<status status="PASS" starttime="20231225 11:27:47.256" endtime="20231225 11:27:49.595"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>xpath=//*[@id="autocomplete-0-item-4"]/button</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20231224 23:02:02.705" level="INFO">Clicking button 'xpath=//*[@id="autocomplete-0-item-4"]/button'.</msg>
-<status status="PASS" starttime="20231224 23:02:02.704" endtime="20231224 23:02:05.845"/>
+<msg timestamp="20231225 11:27:49.596" level="INFO">Clicking button 'xpath=//*[@id="autocomplete-0-item-4"]/button'.</msg>
+<status status="PASS" starttime="20231225 11:27:49.595" endtime="20231225 11:27:55.451"/>
 </kw>
 <kw name="Mouse Over" library="SeleniumLibrary">
 <arg>xpath=//*[@id="product-list"]/div/div/ol/li[1]/div/div[1]/a</arg>
 <doc>Simulates hovering the mouse over the element ``locator``.</doc>
-<msg timestamp="20231224 23:02:05.846" level="INFO">Simulating Mouse Over on element 'xpath=//*[@id="product-list"]/div/div/ol/li[1]/div/div[1]/a'.</msg>
-<status status="PASS" starttime="20231224 23:02:05.845" endtime="20231224 23:02:09.200"/>
+<msg timestamp="20231225 11:27:55.451" level="INFO">Simulating Mouse Over on element 'xpath=//*[@id="product-list"]/div/div/ol/li[1]/div/div[1]/a'.</msg>
+<status status="PASS" starttime="20231225 11:27:55.451" endtime="20231225 11:27:58.540"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20231224 23:02:11.201" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20231224 23:02:09.200" endtime="20231224 23:02:11.201"/>
+<msg timestamp="20231225 11:28:00.540" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20231225 11:27:58.540" endtime="20231225 11:28:00.540"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath=//*[@id="product-list"]/div/div/ol/li[1]/div/div[1]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231224 23:02:11.201" level="INFO">Clicking element 'xpath=//*[@id="product-list"]/div/div/ol/li[1]/div/div[1]'.</msg>
-<status status="PASS" starttime="20231224 23:02:11.201" endtime="20231224 23:02:15.328"/>
+<msg timestamp="20231225 11:28:00.542" level="INFO">Clicking element 'xpath=//*[@id="product-list"]/div/div/ol/li[1]/div/div[1]'.</msg>
+<status status="PASS" starttime="20231225 11:28:00.541" endtime="20231225 11:28:01.770"/>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20231224 23:02:16.537" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20231224 23:02:15.328" endtime="20231224 23:02:16.537"/>
+<msg timestamp="20231225 11:28:02.440" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-17.png"&gt;&lt;img src="selenium-screenshot-17.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20231225 11:28:01.770" endtime="20231225 11:28:02.440"/>
 </kw>
-<status status="PASS" starttime="20231224 23:01:49.141" endtime="20231224 23:02:16.537"/>
+<status status="PASS" starttime="20231225 11:27:42.739" endtime="20231225 11:28:02.440"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20231224 23:02:16.537" endtime="20231224 23:02:19.631"/>
+<status status="PASS" starttime="20231225 11:28:02.442" endtime="20231225 11:28:05.055"/>
 </kw>
-<status status="PASS" starttime="20231224 23:01:41.950" endtime="20231224 23:02:19.632"/>
+<status status="PASS" starttime="20231225 11:27:34.313" endtime="20231225 11:28:05.057"/>
 </test>
-<test id="s1-t7" name="Test Click x icon" line="46">
+<test id="s1-t9" name="Test Click x icon" line="55">
 <kw name="Open Browser To Central Website">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20231224 23:02:19.637" level="INFO">Opening browser 'Chrome' to base url 'https://www.central.co.th/en'.</msg>
-<status status="PASS" starttime="20231224 23:02:19.636" endtime="20231224 23:02:25.267"/>
+<msg timestamp="20231225 11:28:05.061" level="INFO">Opening browser 'Chrome' to base url 'https://www.central.co.th/en'.</msg>
+<status status="PASS" starttime="20231225 11:28:05.061" endtime="20231225 11:28:07.495"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20231224 23:02:25.268" endtime="20231224 23:02:26.469"/>
+<status status="PASS" starttime="20231225 11:28:07.495" endtime="20231225 11:28:15.610"/>
 </kw>
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <arg>0.5s</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20231224 23:02:26.469" endtime="20231224 23:02:26.469"/>
+<status status="PASS" starttime="20231225 11:28:15.610" endtime="20231225 11:28:15.610"/>
 </kw>
-<status status="PASS" starttime="20231224 23:02:19.635" endtime="20231224 23:02:26.470"/>
+<status status="PASS" starttime="20231225 11:28:05.061" endtime="20231225 11:28:15.610"/>
 </kw>
 <kw name="Search with Products">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>//*[@id="autocomplete-0-input"]</arg>
 <arg>Shoe</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231224 23:02:26.473" level="INFO">Typing text 'Shoe' into text field '//*[@id="autocomplete-0-input"]'.</msg>
-<status status="PASS" starttime="20231224 23:02:26.472" endtime="20231224 23:02:28.765"/>
+<msg timestamp="20231225 11:28:15.612" level="INFO">Typing text 'Shoe' into text field '//*[@id="autocomplete-0-input"]'.</msg>
+<status status="PASS" starttime="20231225 11:28:15.611" endtime="20231225 11:28:19.955"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>//*[@id="autocomplete-0-input"]</arg>
 <arg>\ue007</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20231224 23:02:28.767" level="INFO">Sending key(s) ('\ue007',) to //*[@id="autocomplete-0-input"] element.</msg>
-<msg timestamp="20231224 23:02:30.585" level="INFO">Sending key </msg>
-<status status="PASS" starttime="20231224 23:02:28.766" endtime="20231224 23:02:31.239"/>
+<msg timestamp="20231225 11:28:19.957" level="INFO">Sending key(s) ('\ue007',) to //*[@id="autocomplete-0-input"] element.</msg>
+<msg timestamp="20231225 11:28:25.460" level="INFO">Sending key </msg>
+<status status="PASS" starttime="20231225 11:28:19.955" endtime="20231225 11:28:26.249"/>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20231224 23:02:33.748" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-9.png"&gt;&lt;img src="selenium-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20231224 23:02:31.239" endtime="20231224 23:02:33.748"/>
+<msg timestamp="20231225 11:28:26.957" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-18.png"&gt;&lt;img src="selenium-screenshot-18.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20231225 11:28:26.249" endtime="20231225 11:28:26.957"/>
 </kw>
-<status status="PASS" starttime="20231224 23:02:26.470" endtime="20231224 23:02:33.748"/>
+<status status="PASS" starttime="20231225 11:28:15.611" endtime="20231225 11:28:26.957"/>
 </kw>
 <kw name="Clear Search Results">
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>xpath=//*[@id="searchBox"]/div/form/div[3]/button</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20231224 23:02:33.750" level="INFO">Clicking button 'xpath=//*[@id="searchBox"]/div/form/div[3]/button'.</msg>
-<status status="PASS" starttime="20231224 23:02:33.750" endtime="20231224 23:02:36.703"/>
+<msg timestamp="20231225 11:28:26.959" level="INFO">Clicking button 'xpath=//*[@id="searchBox"]/div/form/div[3]/button'.</msg>
+<status status="PASS" starttime="20231225 11:28:26.958" endtime="20231225 11:28:29.807"/>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20231224 23:02:37.569" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-10.png"&gt;&lt;img src="selenium-screenshot-10.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20231224 23:02:36.704" endtime="20231224 23:02:37.569"/>
+<msg timestamp="20231225 11:28:30.526" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-19.png"&gt;&lt;img src="selenium-screenshot-19.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20231225 11:28:29.807" endtime="20231225 11:28:30.527"/>
 </kw>
-<status status="PASS" starttime="20231224 23:02:33.749" endtime="20231224 23:02:37.569"/>
+<status status="PASS" starttime="20231225 11:28:26.958" endtime="20231225 11:28:30.527"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20231224 23:02:37.570" endtime="20231224 23:02:40.512"/>
+<status status="PASS" starttime="20231225 11:28:30.527" endtime="20231225 11:28:33.291"/>
 </kw>
-<status status="PASS" starttime="20231224 23:02:19.634" endtime="20231224 23:02:40.513"/>
+<status status="PASS" starttime="20231225 11:28:05.060" endtime="20231225 11:28:33.292"/>
 </test>
-<status status="PASS" starttime="20231224 23:00:11.149" endtime="20231224 23:02:40.516"/>
+<status status="PASS" starttime="20231225 11:24:57.208" endtime="20231225 11:28:33.294"/>
 </suite>
 <statistics>
 <total>
-<stat pass="7" fail="0" skip="0">All Tests</stat>
+<stat pass="9" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="7" fail="0" skip="0" id="s1" name="Test Search bar">Test Search bar</stat>
+<stat pass="9" fail="0" skip="0" id="s1" name="Test Search bar">Test Search bar</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20231224 23:00:11.433" level="ERROR">Error in file 'C:\workV\TestAuto\Test_Search_bar.robot' on line 3: Importing library 'Browser' failed: ModuleNotFoundError: No module named 'Browser'
+<msg timestamp="20231225 11:24:57.607" level="ERROR">Error in file 'C:\workV\TestAuto\Test_Search_bar.robot' on line 3: Importing library 'Browser' failed: ModuleNotFoundError: No module named 'Browser'
 Traceback (most recent call last):
   None
 PYTHONPATH:

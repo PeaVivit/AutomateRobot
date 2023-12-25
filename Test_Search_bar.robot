@@ -13,6 +13,11 @@ Test Brands Search
     Search with Brands
     Close Browser
 
+Test Search with Thai Language
+    Open Browser To Central Website
+    Multi Language Search
+    Close Browser
+
 Test Products Search
     Open Browser To Central Website
     Search with Products
@@ -21,6 +26,11 @@ Test Products Search
 Test Spacebar Search
     Open Browser To Central Website
     Spacebar Search
+    Close Browser
+
+Test Number Search
+    Open Browser To Central Website
+    Number Search
     Close Browser
 
 Test Special Characters
@@ -54,6 +64,11 @@ Open Browser To Central Website
     Maximize Browser Window
     Set Selenium Speed    0.5s
 
+Multi Language Search
+    Input Text    //*[@id="autocomplete-0-input"]    รองเท้า
+    Press Keys    //*[@id="autocomplete-0-input"]    \ue007
+    Capture Page Screenshot
+
 Search with Products
     Input Text    //*[@id="autocomplete-0-input"]    Shoe
     Press Keys    //*[@id="autocomplete-0-input"]    \ue007
@@ -71,6 +86,17 @@ Spacebar Search
     ${text}=    Get Text    xpath=//*[@id="searchSuggestions"]/div/div[1]/section[1]/div/div   
     Log    ${text}
     ${expected_result}=    Set Variable    TRENDING
+    ${actual_result}=  Set Variable  ${text}  
+    Should Be Equal As Strings    ${actual_result}    ${expected_result} 
+    Capture Page Screenshot
+
+Number Search
+     Input Text    //*[@id="autocomplete-0-input"]    123456
+     Press Keys    //*[@id="autocomplete-0-input"]    \ue007
+    BuiltIn.Sleep    3s   
+    ${text}=    Get Text    xpath=//*[@id="product-list"]/div/div/div/div[1]/p
+    Log    ${text}
+    ${expected_result}=    Set Variable    Sorry, we couldn't find any results matching
     ${actual_result}=  Set Variable  ${text}  
     Should Be Equal As Strings    ${actual_result}    ${expected_result} 
     Capture Page Screenshot
